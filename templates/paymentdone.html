@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Payment Done</title>
+
+<style>
+
+/* PAGE */
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#fafafa;
+margin:0;
+text-align:center;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#111;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px 30px;
+}
+
+.nav-left a{
+color:white;
+text-decoration:none;
+margin-right:25px;
+font-size:17px;
+font-weight:bold;
+}
+
+.nav-left a:hover{
+color:#ff4d4d;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+}
+
+.profile-icon{
+width:35px;
+height:35px;
+border-radius:50%;
+margin-right:20px;
+cursor:pointer;
+}
+
+.logout-btn{
+background:#ff4d4d;
+color:white;
+padding:8px 16px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.logout-btn:hover{
+background:#e63c3c;
+}
+
+/* SUCCESS BOX */
+
+.box{
+background:white;
+padding:35px;
+margin:100px auto;
+width:420px;
+border-radius:12px;
+box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+/* TEXT */
+
+h1{
+color:#ff4d4d;
+}
+
+h2{
+color:#333;
+}
+
+h3{
+color:#555;
+}
+
+/* BUTTON */
+
+.btn{
+background:#ff4d4d;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+font-size:16px;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#e63c3c;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="nav-left">
+
+<a href="/home">Home</a>
+<a href="/menu">Menu</a>
+<a href="/myorders">My Orders</a>
+
+</div>
+
+<div class="nav-right">
+
+<a href="/profile">
+<img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-icon">
+</a>
+
+<a href="/logout">
+<button class="logout-btn">Logout</button>
+</a>
+
+</div>
+
+</div>
+
+<div class="box">
+
+<h1>Order Successful 🎉</h1>
+
+<h2>Order ID : {{order_id}}</h2>
+
+<h3>Food : {{food}}</h3>
+
+<h3>Quantity : {{qty}}</h3>
+
+<h2>Total Paid : ₹{{total}}</h2>
+
+<br>
+
+<a href="/home">
+<button class="btn">Back To Menu</button>
+</a>
+
+</div>
+
+</body>
+</html>

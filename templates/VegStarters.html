@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VFC</title>
+
+<style>
+
+/* PAGE */
+
+body{
+background:#f5f5f5;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#111;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:14px 30px;
+}
+
+.nav-left a{
+color:white;
+text-decoration:none;
+margin-right:25px;
+font-size:18px;
+font-weight:bold;
+}
+
+.nav-left a:hover{
+color:#ff3b3b;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+}
+
+.profile-icon{
+width:35px;
+height:35px;
+border-radius:50%;
+margin-right:20px;
+}
+
+.logout-btn{
+background:#ff3b3b;
+color:white;
+padding:8px 15px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.logout-btn:hover{
+background:#d60000;
+}
+
+/* TITLE */
+
+h1{
+text-align:center;
+font-size:48px;
+color:#ff3b3b;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin-top:20px;
+}
+
+h2{
+text-align:center;
+color:#555;
+}
+
+/* BUTTON */
+
+.main-btn{
+display:block;
+margin:20px auto;
+background:#ff3b3b;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+.main-btn:hover{
+background:#d60000;
+}
+
+/* SECTION */
+
+h3{
+text-align:center;
+background:#ff3b3b;
+color:white;
+padding:10px;
+border-radius:30px;
+width:320px;
+margin:20px auto;
+}
+
+/* GRID */
+
+.grid-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+padding:40px;
+}
+
+/* FOOD CARD */
+
+.icon-button{
+display:flex;
+flex-direction:column;
+align-items:center;
+background:white;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+padding:15px;
+transition:0.3s;
+}
+
+.icon-button:hover{
+transform:translateY(-8px);
+}
+
+.icon-button img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.icon-button span{
+margin-top:10px;
+font-size:18px;
+font-weight:bold;
+}
+
+.icon-button a{
+text-decoration:none;
+color:#333;
+}
+
+.icon-button a:hover{
+color:#ff3b3b;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="nav-left">
+<a href="/home">Home</a>
+<a href="/menu">Menu</a>
+<a href="/myorders">My Orders</a>
+
+</div>
+
+<div class="nav-right">
+
+<a href="/profile">
+<img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" class="profile-icon">
+</a>
+
+<a href="/logout">
+<button class="logout-btn">Logout</button>
+</a>
+
+</div>
+
+</div>
+
+<!-- TITLE -->
+
+<h1>VFC</h1>
+
+<h2>Good Food, Good Health</h2>
+
+<button class="main-btn">MOST ORDERED</button>
+
+<h3>VEG STARTERS MENU</h3>
+
+<!-- FOOD GRID -->
+
+<div class="grid-container">
+
+<div class="icon-button">
+<img src="static/aloo-tikki.webp" alt="Aloo Tikka">
+<span><a href="/alootikka">ALOO TIKKA : ₹199</a></span>
+</div>
+
+<div class="icon-button">
+<img src="static/doublemitta.jpg" alt="Double Ka Mitta">
+<span><a href="/doublekamitta">DOUBLE KA MITTA : ₹249</a></span>
+</div>
+
+<div class="icon-button">
+<img src="static/momos.jpg" alt="Momos">
+<span><a href="/momos">MOMOS : ₹350</a></span>
+</div>
+
+<div class="icon-button">
+<img src="static/panner tikka.jpg" alt="Paneer Tikka">
+<span><a href="/paneertikka">PANEER TIKKA : ₹200</a></span>
+</div>
+
+<div class="icon-button">
+<img src="static/roll.jpeg" alt="Veg Rolls">
+<span><a href="/vegrolls">VEG ROLLS : ₹230</a></span>
+</div>
+
+<div class="icon-button">
+<img src="static/samosa.jpg" alt="Samosas">
+<span><a href="/samosas">SAMOSAS : ₹230</a></span>
+</div>
+
+</div>
+
+</body>
+</html>
